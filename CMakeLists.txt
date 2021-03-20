@@ -3,8 +3,6 @@ project(main C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_compile_options(-O3)
-
 add_executable(${PROJECT_NAME} main.c)
 
 install(TARGETS ${PROJECT_NAME})
