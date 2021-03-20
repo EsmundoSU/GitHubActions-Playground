@@ -42,7 +42,7 @@ jobs:
       - uses: actions/checkout@v1
 
       - name: Download Ninja and CMake
-        run: cmake -P ${{ runner.os }}
+        run: cmake -P ./cmake/downloadTools.cmake ${{ runner.os }}
 
       - name: Download ccache
         id: ccache
